@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Mobile -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <!-- SEO -->
+  <title>影视App下载 - 热门影视APP安卓版APK免费下载</title>
+
+  <meta
+    name="description"
+    content="影视App下载中心，提供热门影视APP安卓版APK下载，包括荐片影视、网飞猫、可可影视、好好看、剧下饭等影视应用，方便快速获取影视App安装包和官方下载地址。"
+  >
+
+  <meta
+    name="keywords"
+    content="影视App下载,影视APP,影视app下载,影视APK,影视安卓版,影视软件,影视应用"
+  >
+
+  <meta name="robots" content="index,follow">
+
+  <!-- Canonical -->
+  <!-- 部署后请将下面地址替换成你的真实域名 -->
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="影视App下载 - 热门影视APP安卓版APK免费下载">
+  <meta
+    property="og:description"
+    content="精选热门影视App，提供安卓版APK下载及官方网站信息。"
+  >
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:site_name" content="影视App下载">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#f05c5c">
+
+  <style>
+    /* =========================
+       Reset
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "PingFang SC",
+        "Hiragino Sans GB",
+        "Microsoft YaHei",
+        Arial,
+        sans-serif;
+
+      background: #f5f6f8;
+      color: #1f2937;
+      line-height: 1.6;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* =========================
+       Layout
+    ========================= */
+
+    .container {
+      width: min(100% - 32px, 1000px);
+      margin: 0 auto;
+    }
+
+    /* =========================
+       Header
+    ========================= */
+
+    .header {
+      background: #111827;
+      color: #fff;
+      padding: 44px 0 40px;
+      border-bottom: 3px solid #f05c5c;
+    }
+
+    .header-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      line-height: 1.3;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+
+    .header-desc {
+      color: #cbd5e1;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* =========================
+       Main
+    ========================= */
+
+    main {
+      padding: 32px 0 55px;
+    }
+
+    /* =========================
+       Intro
+    ========================= */
+
+    .intro {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      padding: 22px 24px;
+      margin-bottom: 28px;
+    }
+
+    .intro h2 {
+      font-size: 20px;
+      color: #111827;
+      margin-bottom: 9px;
+    }
+
+    .intro p {
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* =========================
+       Section Header
+    ========================= */
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .section-header h2 {
+      font-size: 21px;
+      color: #111827;
+    }
+
+    .app-count {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    /* =========================
+       App Grid
+    ========================= */
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    /* =========================
+       App Card
+    ========================= */
+
+    .app-card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      padding: 22px;
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .app-card:hover {
+      border-color: #f5aaaa;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      transform: translateY(-2px);
+    }
+
+    /* =========================
+       App Top
+    ========================= */
+
+    .app-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 17px;
+    }
+
+    .app-icon {
+      width: 58px;
+      height: 58px;
+      flex: 0 0 58px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: #f05c5c;
+      color: #fff;
+
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .app-info {
+      min-width: 0;
+    }
+
+    .app-name {
+      color: #111827;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+
+    .app-tag {
+      display: inline-block;
+
+      color: #f05c5c;
+      background: #fff1f1;
+
+      padding: 2px 8px;
+
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    /* =========================
+       App Description
+    ========================= */
+
+    .app-description {
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.7;
+
+      min-height: 48px;
+      margin-bottom: 18px;
+    }
+
+    /* =========================
+       Buttons
+    ========================= */
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      min-height: 42px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0 15px;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      border: 1px solid #d1d5db;
+
+      transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+    }
+
+    .btn-download {
+      flex: 1;
+
+      background: #f05c5c;
+      border-color: #f05c5c;
+      color: #fff;
+    }
+
+    .btn-download:hover {
+      background: #d94d4d;
+      border-color: #d94d4d;
+    }
+
+    .btn-official {
+      color: #374151;
+      background: #fff;
+    }
+
+    .btn-official:hover {
+      background: #f9fafb;
+      border-color: #9ca3af;
+    }
+
+    /* =========================
+       Notice
+    ========================= */
+
+    .notice {
+      margin-top: 25px;
+      padding: 16px 18px;
+
+      background: #fffaf0;
+      border-left: 3px solid #f59e0b;
+
+      color: #6b7280;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    /* =========================
+       SEO Content
+    ========================= */
+
+    .seo-content {
+      margin-top: 30px;
+
+      background: #fff;
+      border: 1px solid #e5e7eb;
+
+      padding: 24px;
+    }
+
+    .seo-content h2 {
+      color: #111827;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .seo-content h3 {
+      color: #111827;
+      font-size: 17px;
+      margin-top: 22px;
+      margin-bottom: 8px;
+    }
+
+    .seo-content p {
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.85;
+      margin-bottom: 10px;
+    }
+
+    .seo-content ul {
+      padding-left: 20px;
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    /* =========================
+       Footer
+    ========================= */
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 25px 0 35px;
+
+      color: #94a3b8;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* =========================
+       Mobile
+    ========================= */
+
+    @media (max-width: 680px) {
+
+      .container {
+        width: min(100% - 24px, 1000px);
+      }
+
+      .header {
+        padding: 31px 0 30px;
+      }
+
+      .header h1 {
+        font-size: 26px;
+      }
+
+      .header-desc {
+        font-size: 14px;
+      }
+
+      main {
+        padding: 22px 0 40px;
+      }
+
+      .intro {
+        padding: 18px;
+        margin-bottom: 22px;
+      }
+
+      .intro h2 {
+        font-size: 18px;
+      }
+
+      .section-header {
+        margin-bottom: 14px;
+      }
+
+      .section-header h2 {
+        font-size: 19px;
+      }
+
+      .app-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .app-card {
+        padding: 18px;
+      }
+
+      .app-icon {
+        width: 52px;
+        height: 52px;
+        flex-basis: 52px;
+        font-size: 20px;
+      }
+
+      .app-name {
+        font-size: 18px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .seo-content {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       Header
+  ========================== -->
+
+  <header class="header">
+    <div class="container header-inner">
+
+      <h1>影视App下载</h1>
+
+      <p class="header-desc">
+        热门影视 APP 安卓版 APK 下载，快速获取影视应用安装包和官方网站信息
+      </p>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       Main
+  ========================== -->
+
+  <main>
+
+    <div class="container">
+
+      <!-- Intro -->
+
+      <section class="intro">
+
+        <h2>影视App下载大全</h2>
+
+        <p>
+          这里整理了一些热门影视 App 的下载信息，提供 Android
+          安卓版 APK 下载地址及官方网站入口。包括荐片影视、网飞猫、
+          可可影视、好好看、剧下饭等影视应用，方便用户快速查找和下载安装。
+        </p>
+
+      </section>
+
+
+      <!-- App List -->
+
+      <section>
+
+        <div class="section-header">
+
+          <h2>热门影视App下载</h2>
+
+          <span class="app-count">5 个应用</span>
+
+        </div>
+
+
+        <div class="app-grid">
+
+
+          <!-- =================================
+               荐片影视
+          ================================== -->
+
+          <article class="app-card">
+
+            <div class="app-top">
+
+              <div class="app-icon">荐</div>
+
+              <div class="app-info">
+
+                <div class="app-name">
+                  荐片影视
+                </div>
+
+                <span class="app-tag">
+                  推荐
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <p class="app-description">
+              荐片影视是一款影视应用，提供电影、电视剧等影视内容。
+              本页面提供荐片影视 Android APK 下载及官方网站入口。
+            </p>
+
+
+            <div class="buttons">
+
+              <a
+                class="btn btn-download"
+                href="https://file.szqng.com/client/builds/47/jp-host-release.apk"
+                target="_blank"
+                rel="nofollow noopener"
+                aria-label="下载荐片影视 Android APK"
+              >
+                APK 下载
+              </a>
+
+              <a
+                class="btn btn-official"
+                href="https://www.jianpian.com/"
+                target="_blank"
+                rel="nofollow noopener"
+                aria-label="访问荐片影视官网"
+              >
+                官网
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================
+               网飞猫
+          ================================== -->
+
+          <article class="app-card">
+
+            <div class="app-top">
+
+              <div class="app-icon">网</div>
+
+              <div class="app-info">
+
+                <div class="app-name">
+                  网飞猫
+                </div>
+
+                <span class="app-tag">
+                  影视 App
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <p class="app-description">
+              网飞猫是一款影视应用，提供 Android APK 下载。
+              本页面整理网飞猫下载地址及官方网站信息。
+            </p>
+
+
+            <div class="buttons">
+
+              <a
+                class="btn btn-download"
+                href="https://dl.ncat32.com/target/apk/ncat/202609/05/app/c200000-NcatC200000V260905210415-3.5.0.30500_gr.apk"
+                target="_blank"
+                rel="nofollow noopener"
+                aria-label="下载网飞猫 Android APK"
+              >
+                APK 下载
+              </a>
+
+              <a
+                class="btn btn-official"
+                href="https://www.ncat.app/"
+                target="_blank"
+                rel="nofollow noopener"
+                aria-label="访问网飞猫官网"
+              >
+                官网
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================
+               可可影视
+          ================================== -->
+
+          <article class="app-card">
+
+            <div class="app-top">
+
+              <div class="app-icon">可</div>
+
+              <div class="app-info">
+
+                <div class="app-name">
+                  可可影视
+                </div>
+
+                <span class="app-tag">
+                  影视 App
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <p class="app-description">
+              可可影视 Android 应用，提供影视内容及 APK 下载。
+              支持通过下载地址获取可可影视安装包。
+            </p>
+
+
+            <div class="buttons">
+
+              <a
+                class="btn btn-download"
+                href="https://dl.kkys03.com/target/apk/kkdy/202609/05/app/c1-KkdyC1V260905210415-3.5.0.30500_gr.apk"
+                target="_blank"
+                rel="nofollow noopener"
+                aria-label="下载可可影视 Android APK"
+              >
+                APK 下载
+              </a>
+
+              <a
+                class="btn btn-official"
+                href="https://www.kkys14.com/"
+                target="_blank"
+                rel="nofollow noopener"
+                aria-label="访问可可影视官网"
+              >
+                官网
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================
+               好好看
+          ================================== -->
+
+          <article class="app-card">
+
+            <div class="app-top">
+
+              <div class="app-icon">好</div>
+
+              <div class="app-info">
+
+                <div class="app-name">
+                  好好看 App
+                </div>
+
+                <span class="app-tag">
+                  影视 App
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <p class="app-description">
+              好好看是一款影视应用，提供 Android APK 下载。
+              本页面提供好好看 App 下载地址及官方网站入口。
+            </p>
+
+
+            <div class="buttons">
+
+              <a
+                class="btn btn-download"
+                href="https://dl.hhkan8.com/target/apk/hkan/202609/05/app/c300000-HkanC300000V260905210415-3.5.0.30500_gr.apk"
+                target="_blank"
+                rel="nofollow noopener"
+                aria-label="下载好好看 Android APK"
+              >
+                APK 下载
+              </a>
+
+              <a
+                class="btn btn-official"
+                href="https://hhkan.app/"
+                target="_blank"
+                rel="nofollow noopener"
+                aria-label="访问好好看官网"
+              >
+                官网
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================
+               剧下饭
+          ================================== -->
+
+          <article class="app-card">
+
+            <div class="app-top">
+
+              <div class="app-icon">剧</div>
+
+              <div class="app-info">
+
+                <div class="app-name">
+                  剧下饭
+                </div>
+
+                <span class="app-tag">
+                  影视 App
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <p class="app-description">
+              剧下饭影视应用，提供 Android APK 下载。
+              用户可以通过下载按钮获取对应的 APK 安装包。
+            </p>
+
+
+            <div class="buttons">
+
+              <a
+                class="btn btn-download"
+                href="https://media.meilinvps.com/f.php?id=wf8aQkY6uevH.apk"
+                target="_blank"
+                rel="nofollow noopener"
+                aria-label="下载剧下饭 Android APK"
+              >
+                APK 下载
+              </a>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+      <!-- Notice -->
+
+      <div class="notice">
+        <strong>温馨提示：</strong>
+        APK 文件来自第三方下载地址。安装 Android 应用前，请确认下载来源可信，
+        并根据设备安全设置进行安装。应用版本和下载地址可能会发生变化。
+      </div>
+
+
+      <!-- SEO Content -->
+
+      <section class="seo-content">
+
+        <h2>关于影视App下载</h2>
+
+        <p>
+          影视App可以让用户在 Android 手机、平板等设备上观看和管理影视内容。
+          不同影视应用提供的内容、功能和支持的设备可能有所不同。
+        </p>
+
+        <h3>Android影视App下载</h3>
+
+        <p>
+          本站整理常见影视App的 Android APK 下载信息，用户可以根据应用名称
+          查找对应的安装包。APK 是 Android Package Kit，即 Android 系统的应用安装包格式。
+        </p>
+
+        <h3>如何选择影视App</h3>
+
+        <p>
+          下载应用时建议优先确认应用名称、版本信息和下载来源，并在安装前检查
+          APK 文件是否来自可信渠道。不同应用的服务内容和可用性可能有所变化。
+        </p>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       Footer
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      © 2026 影视App下载
+
+    </div>
+
+  </footer>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P16JPFXD8J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P16JPFXD8J');
+</script>
+
+</body>
+</html>
+
