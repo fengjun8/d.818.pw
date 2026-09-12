@@ -124,6 +124,42 @@
     }
 
     /* =========================
+       Top Nav
+    ========================= */
+
+    .top-nav {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .top-nav a {
+      padding: 7px 18px;
+
+      border: 1px solid #374151;
+
+      color: #cbd5e1;
+      font-size: 14px;
+      font-weight: 600;
+
+      transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+    }
+
+    .top-nav a:hover {
+      border-color: #f05c5c;
+      color: #fff;
+    }
+
+    .top-nav a.active {
+      background: #f05c5c;
+      border-color: #f05c5c;
+      color: #fff;
+    }
+
+    /* =========================
        Main
     ========================= */
 
@@ -476,6 +512,11 @@
 
   <header class="header">
     <div class="container header-inner">
+
+      <nav class="top-nav" aria-label="站点导航">
+        <a href="index.html" class="active">影视App</a>
+        <a href="ebook.html">电子书</a>
+      </nav>
 
       <h1>影视App下载</h1>
 
